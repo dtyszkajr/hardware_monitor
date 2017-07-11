@@ -1,0 +1,51 @@
+{
+    "settings": {"index": {"number_of_shards": "1","number_of_replicas": "1"}},
+    "mappings": {
+        "tp_hardware" : {
+            "properties" : {
+                "cpu_load": {
+                    "type": "float"
+                },
+                "cpu_usage": {
+                    "type": "float"
+                },
+                "disk_r_kbs": {
+                    "type": "float"
+                },
+                "disk_reads": {
+                    "type": "float"
+                },
+                "disk_w_kbs": {
+                    "type": "float"
+                },
+                "disk_writes": {
+                    "type": "float"
+                },
+                "group": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "hostname": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "net_down_bytes": {
+                    "type": "integer"
+                },
+                "net_up_bytes": {
+                    "type": "integer"
+                },
+                "ram_load": {
+                    "type": "float"
+                },
+                "subgroup": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "timestamp": {
+                    "type": "date"
+                }
+            }
+        }
+    }
+}
