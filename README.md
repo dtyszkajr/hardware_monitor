@@ -4,7 +4,7 @@
 
 * configure your elasticsearch cluster and create the index using es_index_config.json (PUT localhost:9200/i_hardware) ;
 * configure ES_HOSTS variable in hardware_monitor.sh to point to your es cluster;
-* install sysstat (sudo apt-get install systat -y)
+* install sysstat (sudo apt-get install sysstat -y)
 * for each instance/cluster, configure SYS_GROUP and SYS_SUBGROUP variables in hardware_monitor.sh
 * add to /etc/rc.local (before exit 0):
 ```bash

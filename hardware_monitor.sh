@@ -39,5 +39,5 @@ while true; do
         "net_up_bytes": '$TX_BYTES_DELTA'
     }' || tail /dev/null
     # waiting
-    sleep 44
+    sleep 34
 done
